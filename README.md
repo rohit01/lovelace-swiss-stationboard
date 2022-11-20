@@ -4,17 +4,17 @@
 Custom lovelace card for Home Assistant Lovelace UI.
 Swiss public transport stationboard. Shows connections from one or multiple stations. 
 
-![Stationboard "Schüpfen"](https://github.com/neuhausf/lovelace-swiss-stationboard/blob/main/img/stationboard-1.png?raw=true "Stationboard Schüpfen")
+![Stationboard "Schüpfen"](https://github.com/rohit01/lovelace-swiss-stationboard/blob/main/img/stationboard-1.png?raw=true "Stationboard Schüpfen")
 
 ## Information
 
-_**Warning:** Requires https://github.com/neuhausf/swiss-public-transport-mod to be installed first._
+_**Warning:** Requires https://github.com/rohit01/swiss-public-transport-mod to be installed first._
 Note that the current implementation is based on https://pypi.org/project/python-opendata-transport/ which currently doesn't return *delays* (property is there, but  the underlying API-call to transport.opendata.ch doesn't return anything).
 
 ## Configuration
 
 - Go to HACS
-- Add a custom repo: https://github.com/neuhausf/lovelace-swiss-stationboard
+- Add a custom repo: https://github.com/rohit01/lovelace-swiss-stationboard
 - Install the lovelace card
 
 Add a new custom card to your Dashboard:
@@ -30,7 +30,7 @@ entity:
 
 ### Card settings
 
-* `departure_offset`: an optional number of X minutes (defaults to 0).  If greater than zero minutes, it hides all next departures within those minutes.  Note that the filtering is on the frontend only - so this could lead to an empty stationboard if the sensor doesn't provide enough journeys (`limit` setting of the [stationboard-sensor](https://github.com/neuhausf/swiss-public-transport-mod))
+* `departure_offset`: an optional number of X minutes (defaults to 0).  If greater than zero minutes, it hides all next departures within those minutes.  Note that the filtering is on the frontend only - so this could lead to an empty stationboard if the sensor doesn't provide enough journeys (`limit` setting of the [stationboard-sensor](https://github.com/rohit01/swiss-public-transport-mod))
 * `departure_countdown`: an optional number of minutes (defaults to 15).  All departures within this time window will have a countdown displayed onscreen.
 * `show_seconds`: if true, will show seconds in addition to minutes within the countdown.
 * `entity`: which entity (from *swiss-public-transport-mod*) to use as the data source.

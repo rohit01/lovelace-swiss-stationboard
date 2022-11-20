@@ -4,16 +4,16 @@
 Custom lovelace card for Home Assistant Lovelace UI.
 Swiss public transport stationboard. Shows connections from one or multiple stations.
 
-![Stationboard "Schüpfen"](https://github.com/neuhausf/lovelace-swiss-stationboard/blob/main/img/stationboard-1.png?raw=true "Stationboard Schüpfen")
+![Stationboard "Schüpfen"](https://github.com/rohit01/lovelace-swiss-stationboard/blob/main/img/stationboard-1.png?raw=true "Stationboard Schüpfen")
 
 ## Information
 
-_**Warning:** Requires https://github.com/neuhausf/swiss-public-transport-mod to be installed first._
+_**Warning:** Requires https://github.com/rohit01/swiss-public-transport-mod to be installed first._
 
 ## Configuration
 
 - Go to HACS
-- Add a custom repo: https://github.com/neuhausf/lovelace-swiss-stationboard
+- Add a custom repo: https://github.com/rohit01/lovelace-swiss-stationboard
 - Install the lovelace card
 
 Add a new custom card to your Dashboard:
